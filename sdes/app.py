@@ -5,7 +5,7 @@ from S_DES import encrypt_string, decrypt_string, key_crack
 def show_custom_message(title, message):
     popup = Toplevel(root)
     popup.title(title)
-    popup.geometry("400x200")  # 设置弹窗大小
+    popup.geometry("400x200")
     Label(popup, text=message, font=("Arial", 14), wraplength=350).pack(expand=True, pady=20)
     tk.Button(popup, text="关闭", command=popup.destroy).pack(pady=10)
 
