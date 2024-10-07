@@ -31,7 +31,7 @@ def brute_force_crack():
     plain_text = plain_text_entry.get("1.0", tk.END).strip()
     cipher_text = cipher_text_entry.get("1.0", tk.END).strip()
     keys, time = key_crack(plain_text, cipher_text)
-    show_custom_message("暴力破解结果", f"破解得到密钥: {keys};  耗时 {time} 秒")
+    show_custom_message("暴力破解结果", f"破解得到密钥: {keys};\n耗时 {time} 秒")
 
 def show_encrypt_ui():
     clear_ui()
